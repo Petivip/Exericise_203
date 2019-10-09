@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/form}" th:object="${employee}" method="post">
+   First name:<input type="text" th:field="*{firstName}" /><br />
+    Last name:<input type="text" th:field="*{lastName}" /><br />
+    SSN:<input type="number" th:field="*{ssn}" /><br />
+    Date of Birth:<input type="number" th:field="*{dob}" /><br />
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>
